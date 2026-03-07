@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.login-container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
+}
+
+.login-form {
+  @apply p-8 rounded shadow-md w-full max-w-md text-gray-800;
+}
+
+.login-form h2 {
+  @apply text-2xl font-bold mb-6 text-center;
+}
+
+h1 {
+  @apply text-3xl font-bold mb-6 text-center;
+}
+
+input {
+  @apply w-full p-3 mb-4 border border-gray-300 rounded;
+}
+
+button {
+  @apply w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200;
+}
+
+.auth-link {
+  @apply mt-4 text-sm text-gray-600 text-center;
+}
+
+.auth-link a {
+  @apply text-blue-500 hover:underline;
+}

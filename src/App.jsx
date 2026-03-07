@@ -1,12 +1,18 @@
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './pages/login/login';
+import Register from './pages/register/register';
+import Dashboard from './pages/dashboard/dashboard';
 
-const App = () => {
+function App() {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
