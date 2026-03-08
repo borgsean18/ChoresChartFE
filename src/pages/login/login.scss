@@ -1,0 +1,9 @@
+@import '../../shared.scss';
+
+.login-container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-900;
+}
+
+.login-form {
+  @apply p-8 rounded-lg shadow-lg w-full max-w-md bg-gray-800 text-gray-100;
+}
