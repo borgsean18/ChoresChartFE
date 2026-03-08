@@ -1,12 +1,14 @@
+@use '../colours' as *;
+
 .send-form-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: $success;
+    color: $text-white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 
     &:hover {
-        background-color: darken($color: #4CAF50, $amount: 10%);
+        background-color: $success-hover;
     }
 }
